@@ -1,0 +1,13 @@
+<svg width="0" height="0" class="hidden">
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="dropdown-arrow">
+		<path d="M6.5 9L12.5 15L18.5 9" stroke="currentColor"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 52" id="menu-arrow">
+		<path d="M35.7109 1L60.7109 26L35.7109 51" stroke="currentColor" stroke-width="2"></path>
+		<path d="M60 26L0 26" stroke="currentColor" stroke-width="2"></path>
+	</symbol>
+	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" id="button-arrow">
+		<path d="M6.4707 0.571289L9.89927 3.99986L6.4707 7.42843" stroke="currenColor"></path>
+		<path d="M9.80117 4L0.201172 4" stroke="currenColor"></path>
+	</symbol>
+</svg>
