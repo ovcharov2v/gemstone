@@ -317,36 +317,37 @@ if (accordionItems.length) {
 /*!****************************************!*\
   !*** ./src/js/components/_gallery1.js ***!
   \****************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
+/*import Swiper, { Pagination } from 'swiper';
 
-var sliderElem = document.querySelector('.gallery1__slider');
-var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderElem.querySelector('.swiper'), {
-  slidesPerView: 4,
-  spaceBetween: 35,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true
-});
-slider.on('transitionStart', function () {
-  var ddl = sliderElem.querySelectorAll('.dd');
-  if (ddl.length) ddl.forEach(function (d) {
-    d.classList.remove('dd');
-  });
-  var visibleSlides = sliderElem.querySelectorAll('.swiper-slide-visible');
-  visibleSlides.forEach(function (slide, index) {
-    if (index % 2 === 0) {
-      slide.classList.add('dd');
-    } else {
-      slide.classList.remove('dd');
-    }
-  });
-  //const progressValue = simpleSlider.querySelector('.simple-slider__progress-value')
-  //progressValue.style.width = `${slider.progress*100}%`
-});
+const sliderElem = document.querySelector('.gallery1__slider')
+
+const slider = new Swiper(sliderElem.querySelector('.swiper'), {
+	slidesPerView: 4,
+	spaceBetween: 35,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+})
+
+slider.on('transitionStart', function() {
+	const ddl = sliderElem.querySelectorAll('.dd')
+	if (ddl.length) ddl.forEach(d=>{
+		d.classList.remove('dd')
+	})
+	const visibleSlides = sliderElem.querySelectorAll('.swiper-slide-visible')
+	visibleSlides.forEach((slide,index) => {
+		if(index%2 === 0) {
+			slide.classList.add('dd')
+		}
+		else {
+			slide.classList.remove('dd')
+		}
+	})
+	//const progressValue = simpleSlider.querySelector('.simple-slider__progress-value')
+	//progressValue.style.width = `${slider.progress*100}%`
+})*/
 
 /***/ }),
 
@@ -485,6 +486,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_faq__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/_faq */ "./src/js/components/_faq.js");
 /* harmony import */ var _components_plan_slider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/_plan-slider */ "./src/js/components/_plan-slider.js");
 /* harmony import */ var _components_gallery1__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/_gallery1 */ "./src/js/components/_gallery1.js");
+/* harmony import */ var _components_gallery1__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_gallery1__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
