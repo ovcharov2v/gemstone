@@ -3,6 +3,11 @@ include mixins
 block vars
 	-
 		var baseDir = './'
+		var isHeaderShort = true
+		var noFooterText = false
+		var noFooterLine = false
+		var noFooterLine = false
+		var threeNavLines = true
 	-
 		var title = typeof title !== 'undefined' ? title : null
 		var description = typeof description !== 'undefined' ? description : null
@@ -279,15 +284,17 @@ html(class=html.classList)&attributes(html.attrs)
 			link(rel="stylesheet" href!=`${baseDir}css/main.css?v=${Date.now()}`)
 		block head-end
 	body(class=body.classList)&attributes(body.attrs)
+		.loader
+		+header()
+		+fixedNav()
+		include common-blocks/menu
+		include common-blocks/cursor
 		block body-start
-		block content
+		main.main
+			block content
+		+footer()
+		include ../images/sprite/sprite.svg
 		block scripts
-			script.
-				if (!('IntersectionObserver' in window)) {
-					var script = document.createElement("script");
-					script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
-					document.getElementsByTagName('head')[0].appendChild(script);
-				}
 			script(src!=`${baseDir}js/vendor.js?v=${Date.now()}`)
 			script(src!=`${baseDir}js/main.js?v=${Date.now()}`)
 		block body-end

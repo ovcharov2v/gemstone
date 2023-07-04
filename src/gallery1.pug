@@ -1,0 +1,91 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title="Gallery 1"
+	- html.classList = "theme-dark"
+	- noFooterText = true
+	- noFooterLine = true
+
+block content
+	// Section Gallery 1
+	section.gallery1.container
+		.gallery1__slider(data-cursor="drag-white")
+			.gallery1__slider-elem.swiper
+				.swiper-wrapper
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 01
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery1", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.gallery1__slide--even.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 02
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery2", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 03
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery3", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.gallery1__slide--even.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 04
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery4", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 05
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery1", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 06
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery2", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 07
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery3", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+					// Slide
+					.gallery1__slide.swiper-slide
+						.gallery1__slide-box
+							.gallery1__slide-top
+								p.gallery1__slide-text 08
+								p.gallery1__slide-text Playground- Building A
+							+picture("gallery4", "gallery1__slide-img")
+							.gallery1__slide-bottom
+								p.gallery1__slide-text Playground- Building A
+			.gallery1__progress
+				.gallery1__progress-value

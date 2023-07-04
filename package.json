@@ -1,11 +1,17 @@
 {
-	"name": "ninelines-template",
+	"name": "gemstone",
 	"version": "3.0.4",
-	"description": "Шаблон для разработки сайтов",
-	"repository": "ninelines-team/ninelines-template",
-	"author": "Ninelines Agency <info@ninelines.agency>",
+	"description": "",
+	"author": "",
 	"license": "ISC",
 	"private": true,
+	"repository": "",
+	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build -r https://github.com/ovcharov2v/gemstone.git",
+		"start": "gulp",
+		"build": "gulp build"
+	},
 	"devDependencies": {
 		"@babel/cli": "7.14.8",
 		"@babel/core": "7.14.8",
@@ -44,7 +50,7 @@
 		"imagemin-mozjpeg": "9.0.0",
 		"lint-staged": "11.1.1",
 		"merge-stream": "2.0.0",
-		"node-sass": "6.0.1",
+		"node-sass": "9.0.0",
 		"postcss": "8.3.6",
 		"postcss-reporter": "7.0.2",
 		"postcss-scss": "4.0.0",
@@ -56,12 +62,16 @@
 		"vinyl-buffer": "1.0.1",
 		"webpack": "5.47.0",
 		"webpack-stream": "6.1.2",
-		"yargs": "17.0.1"
+		"yargs": "17.0.1",
+		"gh-pages": "5.0.0"
 	},
 	"dependencies": {
 		"@babel/plugin-transform-runtime": "7.14.5",
 		"@babel/runtime": "7.14.8",
-		"core-js": "3.15.2"
+		"core-js": "3.15.2",
+		"gsap": "3.12.1",
+		"swiper": "9.4.1",
+		"the-new-css-reset": "1.9.0"
 	},
 	"lint-staged": {
 		"*.(js|jsx|ts|tsx)": "eslint --color --fix",

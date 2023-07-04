@@ -1,0 +1,25 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title="Contacts us"
+	- html.classList = "theme-dark"
+	- noFooterText = true
+
+block content
+	// Section Contacts us
+	section.contacts-us.container
+		.content-box
+			.contacts-us__grid
+				.contacts-us__col-img
+					+picture("img10", "contacts-us__img")
+				.contacts-us__col-content
+					.contacts-us__top-box
+						a.contacts-us__tel-link(href="tel:+1 213-612-0021") +1 213-612-0021
+						a.contacts-us__mail-link(href="mailto:gemstone@gem.com") Gemstone@gem.com
+						address.contacts-us__address 416 W 8th St, Los Angeles, CA 90014, USA
+					.contacts-us__bottom-box
+						p.contacts-us__subtitle Сontact form
+						h1.contacts-us__title Get in touch

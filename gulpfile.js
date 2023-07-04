@@ -126,53 +126,6 @@ gulp.task('images', () => {
 		.pipe(gulp.dest('build/images'));
 });
 
-gulp.task('sprites:png', () => {
-	const spritesData = gulp.src('src/images/sprites/png/*.png')
-		.pipe($.plumber({
-			errorHandler,
-		}))
-		.pipe($.if(argv.debug, $.debug()))
-		.pipe($.spritesmith({
-			cssName: '_sprites.scss',
-			cssTemplate: 'src/scss/_sprites.hbs',
-			imgName: 'sprites.png',
-			retinaImgName: 'sprites@2x.png',
-			retinaSrcFilter: 'src/images/sprites/png/*@2x.png',
-			padding: 2,
-		}));
-
-	return $.mergeStream(
-		spritesData.img
-			.pipe($.plumber({
-				errorHandler,
-			}))
-			.pipe($.vinylBuffer())
-			.pipe($.imagemin())
-			.pipe(gulp.dest('build/images')),
-		spritesData.css
-			.pipe(gulp.dest('src/scss')),
-	);
-});
-
-gulp.task('sprites:svg', () => {
-	return gulp.src('src/images/sprites/svg/*.svg')
-		.pipe($.plumber({
-			errorHandler,
-		}))
-		.pipe($.if(argv.debug, $.debug()))
-		.pipe($.svgmin(svgoConfig()))
-		.pipe($.svgstore())
-		.pipe($.if(!argv.minifySvg, $.replace(/^\t+$/gm, '')))
-		.pipe($.if(!argv.minifySvg, $.replace(/\n{2,}/g, '\n')))
-		.pipe($.if(!argv.minifySvg, $.replace('?><!', '?>\n<!')))
-		.pipe($.if(!argv.minifySvg, $.replace('><svg', '>\n<svg')))
-		.pipe($.if(!argv.minifySvg, $.replace('><defs', '>\n\t<defs')))
-		.pipe($.if(!argv.minifySvg, $.replace('><symbol', '>\n<symbol')))
-		.pipe($.if(!argv.minifySvg, $.replace('></svg', '>\n</svg')))
-		.pipe($.rename('sprites.svg'))
-		.pipe(gulp.dest('build/images'));
-});
-
 gulp.task('pug', () => {
 	if (!emittyPug) {
 		emittyPug = $.emitty.setup('src', 'pug', {
@@ -357,13 +310,6 @@ gulp.task('watch', () => {
 	gulp.watch('src/images/**/*.*', gulp.series('images'));
 
 	gulp.watch([
-		'src/images/sprites/png/*.png',
-		'src/scss/_sprites.hbs',
-	], gulp.series('sprites:png'));
-
-	gulp.watch('src/images/sprites/svg/*.svg', gulp.series('sprites:svg'));
-
-	gulp.watch([
 		'src/*.pug',
 		'src/pug/**/*.pug',
 	], {
@@ -474,8 +420,6 @@ gulp.task('build', gulp.series(
 	'robots',
 	gulp.parallel(
 		'images',
-		'sprites:png',
-		'sprites:svg',
 		'scss',
 		'js',
 	),

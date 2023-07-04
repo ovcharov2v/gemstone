@@ -1,0 +1,9 @@
+mixin header()
+	header.header
+		.container.header__container
+			a.header__home-link(href="index.html") ge
+				if isHeaderShort == false
+					|mstone
+			+button("Get an offer", "header__button", "#")
+			button.header__menu-button.js-show-menu(aria-label="Open menu")
+				span.header__menu-button-text Close

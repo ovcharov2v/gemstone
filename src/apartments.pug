@@ -1,0 +1,126 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title = "Apartments"
+
+block content
+	// Section Apartment list
+	section.apartment-list.apartment-list--v1.container
+		.content-box
+			h1.apartment-list__title Apartments  and penthouses
+			.apartment-list__filters.apartment-list__filters--desktop
+				// Filter row
+				.apartment-list__filter-row
+					p.apartment-list__filter-label М
+						sup 2
+						|
+						|
+						|square:
+					.options-group.apartment-list__group.apartment-list__group--type
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox")
+							span.options-group__text Studio
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox")
+							span.options-group__text 1 bedroom
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox", checked)
+							span.options-group__text 2 bedrooms
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox", checked)
+							span.options-group__text 3 bedrooms
+				// Filter row
+				.apartment-list__filter-row
+					p.apartment-list__filter-label Floor:
+					.options-group.apartment-list__group.apartment-list__group--floor
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox")
+							span.options-group__text 1
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox", checked)
+							span.options-group__text 2
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox", checked)
+							span.options-group__text 3-9
+						label.options-group__item.options-group__item--filter
+							input.options-group__option(type="checkbox")
+							span.options-group__text 10
+					.dropdown.apartment-list__dropdown
+						.dropdown__value-box
+							input.dropdown__value(type="text", placeholder="Sort", disabled)
+							+svg("dropdown-arrow")(class="dropdown__arrow")
+						ul.dropdown__options-list
+							li.dropdown__option(data-value="By area") By area
+							li.dropdown__option(data-value="By Floor") By Floor
+
+			.apartment-list__filters.apartment-list__filters--mobile
+				// Dropdown
+				.dropdown.dropdown--multi-select.apartment-list__dropdown
+					.dropdown__value-box
+						input.dropdown__value(type="text", placeholder="Layout", data-prefix="Layout", disabled)
+						+svg("dropdown-arrow")(class="dropdown__arrow")
+					ul.dropdown__options-list
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="Studio")
+								span.dropdown__checkbox-text Studio
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="1 bedroom")
+								span.dropdown__checkbox-text 1 bedroom
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="2 bedrooms")
+								span.dropdown__checkbox-text 2 bedrooms
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="3 bedrooms")
+								span.dropdown__checkbox-text 3 bedrooms
+				// Dropdown
+				.dropdown.dropdown--multi-select.apartment-list__dropdown
+					.dropdown__value-box
+						input.dropdown__value(type="text", placeholder="Floor", data-prefix="Floor",  disabled)
+						+svg("dropdown-arrow")(class="dropdown__arrow")
+					ul.dropdown__options-list
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="1")
+								span.dropdown__checkbox-text 1
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="2")
+								span.dropdown__checkbox-text 2
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="3-9")
+								span.dropdown__checkbox-text 3-9
+						li.dropdown__option
+							label.dropdown__checkbox
+								input.dropdown__checkbox-input(type="checkbox", value="10")
+								span.dropdown__checkbox-text 10
+				// Dropdown
+				.dropdown.apartment-list__dropdown
+					.dropdown__value-box
+						input.dropdown__value(type="text", placeholder="Sort", disabled)
+						+svg("dropdown-arrow")(class="dropdown__arrow")
+					ul.dropdown__options-list
+						li.dropdown__option(data-value="By area") By area
+						li.dropdown__option(data-value="By Floor") By Floor
+			.apartment-list__grid
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+				+apartmentData(className="apartment-list__elem")
+			.apartment-list__button-row
+				+button("Show 8 more of 200", "apartment-list__button")
+
+	+contactsForm()
+
+

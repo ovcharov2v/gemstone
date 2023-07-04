@@ -1,0 +1,65 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title = "Blog"
+
+block content
+	// Section Blog
+	section.section-blog.container
+		.content-box
+			h1.section-blog__title Blog
+			.section-blog__grid
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog1", "section-blog__img")
+					h2.section-blog__article-title House or apartment? What to choose?
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog2", "section-blog__img")
+					h2.section-blog__article-title Space for children and adults, what is it like?
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog3", "section-blog__img")
+					h2.section-blog__article-title Innovative finishing material.
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog4", "section-blog__img")
+					h2.section-blog__article-title Interior design today.
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog5", "section-blog__img")
+					h2.section-blog__article-title Interior design today.
+				// Article link
+				a.section-blog__article(href="article.html")
+					.section-blog__article-top
+						p.section-blog__article-text Date
+							time.section-blog__article-date 24.05.2023
+						p.section-blog__article-time 4 min read
+					+picture("blog6", "section-blog__img")
+					h2.section-blog__article-title Urban infrastructure - what to look for?
+			.section-blog__button-box
+				+button("Next", "section-blog__button")
+

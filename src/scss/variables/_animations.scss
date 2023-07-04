@@ -1,0 +1,14 @@
+$transition-default: .2s ease;
+
+
+.animated-header {
+	&__box {
+		display: inline-block;
+		overflow: hidden;
+	}
+
+	&__elem {
+		display: inline-block;
+		transform: translateY(100%);
+	}
+}

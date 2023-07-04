@@ -1,0 +1,17 @@
+extends pug/base
+
+prepend vars
+	//-
+
+append vars
+	- title = "404"
+	- noFooterText = true
+
+block content
+	// Section 404
+	section.section-404.container
+		.content-box
+			p.section-404__text Page Not Found
+			h1.section-404__title error 404
+			+button("Back to Home", "section-404__back-link", "index.html")
+
