@@ -7,7 +7,7 @@
 		<path d="M60 26L0 26" stroke="currentColor" stroke-width="2"></path>
 	</symbol>
 	<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 8" id="button-arrow">
-		<path d="M6.4707 0.571289L9.89927 3.99986L6.4707 7.42843" stroke="currenColor"></path>
-		<path d="M9.80117 4L0.201172 4" stroke="currenColor"></path>
+		<path d="M6.4707 0.571289L9.89927 3.99986L6.4707 7.42843" stroke="currentColor"></path>
+		<path d="M9.80117 4L0.201172 4" stroke="currentColor"></path>
 	</symbol>
 </svg>
