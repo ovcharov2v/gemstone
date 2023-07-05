@@ -1,43 +1,26 @@
 import Swiper from 'swiper';
-import gsap from "gsap"
 
-
-const galleryAnim = (elem) => {
-	return gsap.timeline({paused: true})
-		.fromTo(elem,
-			{
-				opacity:0
-			},
-			{
-				y: 0,
-				opacity:1,
-				duration: .3,
-				onComplete: () => {
-					document.body.style.overflow = ''
-				},
-				onReverseComplete: () => {
-					document.body.style.overflow = ''
-		elem.classList.remove('gallery--active')
-				},
-			}
-		)
-}
 const galleryLinkList = document.querySelectorAll('[data-gallery]')
 
 if(galleryLinkList.length) {
 	galleryLinkList.forEach((galleryLink)=>{
 		let gallery = document.querySelector(`#${galleryLink.dataset.gallery}`)
-		let animation = galleryAnim(gallery)
+		//let animation = galleryAnim(gallery)
 		galleryLink.addEventListener('click', (e)=>{
 			e.preventDefault()
 			if(gallery) {
 				document.body.style.overflow = 'hidden'
 				gallery.classList.add('gallery--active')
-				animation.play()
+				setTimeout(() => {
+					gallery.classList.add('gallery--animate')
+				})
 			}
 		})
 		gallery.addEventListener('click', () => {
-			animation.reverse()
+			gallery.classList.remove('gallery--animate')
+			setTimeout(() => {
+				gallery.classList.remove('gallery--active')
+			}, 300)
 		})
 	})
 }

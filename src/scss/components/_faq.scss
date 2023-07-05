@@ -77,11 +77,17 @@
 	}
 
 	&__content {
-		height: 0;
+		max-height: 0;
+		transition: max-height .6s;
 		overflow: hidden;
 
 		& > *:last-child {
 			margin-bottom: 40px;
+		}
+
+		.faq__elem--active & {
+			max-height: 999px;
+			transition: max-height .9s;
 		}
 	}
 

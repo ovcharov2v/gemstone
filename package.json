@@ -25,6 +25,7 @@
 		"cssnano": "5.0.7",
 		"del": "6.0.0",
 		"emitty": "1.4.0",
+		"gh-pages": "5.0.0",
 		"gulp": "4.0.2",
 		"gulp-append-prepend": "1.0.9",
 		"gulp-debug": "4.0.0",
@@ -62,14 +63,13 @@
 		"vinyl-buffer": "1.0.1",
 		"webpack": "5.47.0",
 		"webpack-stream": "6.1.2",
-		"yargs": "17.0.1",
-		"gh-pages": "5.0.0"
+		"yargs": "17.0.1"
 	},
 	"dependencies": {
 		"@babel/plugin-transform-runtime": "7.14.5",
 		"@babel/runtime": "7.14.8",
 		"core-js": "3.15.2",
-		"gsap": "3.12.1",
+		"sal.js": "0.8.5",
 		"swiper": "9.4.1",
 		"the-new-css-reset": "1.9.0"
 	},
