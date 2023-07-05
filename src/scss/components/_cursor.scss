@@ -17,6 +17,7 @@
 	letter-spacing: .04em;
 	text-transform: uppercase;
 	border: 1px solid var(--color-elements);
+	user-select: none;
 
 	&--active {
 		display: flex;

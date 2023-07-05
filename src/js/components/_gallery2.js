@@ -8,6 +8,7 @@ if (sliderElem) {
 		spaceBetween: 30,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
+		touchStartPreventDefault: false,
 		breakpoints: {
 			320: {
 				slidesPerView: 1.1,

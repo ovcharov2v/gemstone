@@ -1,5 +1,6 @@
 function headerWatcher() {
 	const header = document.querySelector('.header')
+	if(header.classList.contains('header--permanent-fixed')) return
 	const isHeaderFixed = header.classList.contains('header--fixed') || header.classList.contains('header--before-fix')
 
 	if (window.scrollY < 600) {

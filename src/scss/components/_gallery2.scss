@@ -1,9 +1,5 @@
 .gallery2 {
-	padding-top: 100px;
-
-	@include desktop {
-		padding-left: 160px;
-	}
+	padding-top: 40px;
 
 	&__slider-title {
 		@include h3-40-light;
@@ -57,6 +53,7 @@
 
 	&__slide-img {
 		width: 100%;
+		pointer-events: none;
 	}
 
 	&__progress {

@@ -5,39 +5,41 @@ prepend vars
 
 append vars
 	- title="Gallery 2"
+	- isHeaderFixed = true
 	- noFooterText = true
 	- noFooterLine = true
 
 block content
 	// Section Gallery 2
 	section.gallery2.container
-		.gallery2__slider(data-cursor="drag-black")
-			p.gallery2__slider-title 01-06
-			.gallery2__slider-elem.swiper
-				.swiper-wrapper
-					// Slide
-					.gallery2__slide.swiper-slide
-						.gallery2__slide-box
-							+picture("gallery5", "gallery2__slide-img")
-							.gallery2__slide-bottom
-								p.gallery2__slide-text Building A - photo from 03/22/2023
-					// Slide
-					.gallery2__slide.gallery2__slide--even.swiper-slide
-						.gallery2__slide-box
-							+picture("gallery6", "gallery2__slide-img")
-							.gallery2__slide-bottom
-								p.gallery2__slide-text Building A - photo from 03/22/2023
-					// Slide
-					.gallery2__slide.swiper-slide
-						.gallery2__slide-box
-							+picture("gallery5", "gallery2__slide-img")
-							.gallery2__slide-bottom
-								p.gallery2__slide-text Building A - photo from 03/22/2023
-					// Slide
-					.gallery2__slide.gallery2__slide--even.swiper-slide
-						.gallery2__slide-box
-							+picture("gallery6", "gallery2__slide-img")
-							.gallery2__slide-bottom
-								p.gallery2__slide-text Building A - photo from 03/22/2023
-			.gallery2__progress
-				.gallery2__progress-value
+		.content-box
+			.gallery2__slider(data-cursor="drag-black")
+				p.gallery2__slider-title 01-06
+				.gallery2__slider-elem.swiper
+					.swiper-wrapper
+						// Slide
+						.gallery2__slide.swiper-slide
+							.gallery2__slide-box
+								+picture("gallery5", "gallery2__slide-img")
+								.gallery2__slide-bottom
+									p.gallery2__slide-text Building A - photo from 03/22/2023
+						// Slide
+						.gallery2__slide.gallery2__slide--even.swiper-slide
+							.gallery2__slide-box
+								+picture("gallery6", "gallery2__slide-img")
+								.gallery2__slide-bottom
+									p.gallery2__slide-text Building A - photo from 03/22/2023
+						// Slide
+						.gallery2__slide.swiper-slide
+							.gallery2__slide-box
+								+picture("gallery5", "gallery2__slide-img")
+								.gallery2__slide-bottom
+									p.gallery2__slide-text Building A - photo from 03/22/2023
+						// Slide
+						.gallery2__slide.gallery2__slide--even.swiper-slide
+							.gallery2__slide-box
+								+picture("gallery6", "gallery2__slide-img")
+								.gallery2__slide-bottom
+									p.gallery2__slide-text Building A - photo from 03/22/2023
+				.gallery2__progress
+					.gallery2__progress-value

@@ -9,9 +9,9 @@
 	background-color: var(--color-bg);
 	transition: transform $transition-default;
 
-	&--fixed {
+	&--fixed,
+	&--permanent-fixed {
 		position: fixed;
-		transform: translateY(0);
 	}
 
 	&__container {
@@ -42,7 +42,8 @@
 	}
 
 	&__home-link-part {
-		.header--fixed & {
+		.header--fixed &,
+		.header--permanent-fixed & {
 			display: none;
 		}
 	}

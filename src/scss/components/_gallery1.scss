@@ -1,10 +1,5 @@
 .gallery1 {
-	padding-top: 100px;
-	padding-bottom: 100px;
-
-	@include desktop {
-		padding-left: 160px;
-	}
+	padding-top: 40px;
 
 	&__slider {
 	}
@@ -70,6 +65,7 @@
 
 	&__slide-img {
 		width: 100%;
+		pointer-events: none;
 	}
 
 	&__progress {
@@ -84,7 +80,16 @@
 		top: 0;
 		left: 0;
 		height: 2px;
-		background-color: var(--color-elements);
 		transition: width $transition-default;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--color-elements);
+			content: "";
+		}
 	}
 }

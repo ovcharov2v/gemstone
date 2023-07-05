@@ -20,6 +20,7 @@ if (sliderElem) {
 		spaceBetween: 20,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
+		touchStartPreventDefault: false,
 		on: {
 			init: function () {
 				markEvenSlides()
