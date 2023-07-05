@@ -1,6 +1,7 @@
 import './vendor';
 
 import './components/_loader'
+import './components/_header'
 import './components/_menu'
 import './components/_simple-slider'
 import './components/_animated-line'
