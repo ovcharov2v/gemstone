@@ -8,7 +8,6 @@
 
 	&__value-box {
 		position: relative;
-		cursor: pointer;
 		border: 1px solid #8A8A8A;
 		background-color: var(--color-bg);
 		overflow: hidden;
@@ -56,7 +55,6 @@
 	&__option {
 		position: relative;
 		padding: 6px 14px;
-		cursor: pointer;
 		transition: background-color $transition-default;
 
 		&:hover {
@@ -79,7 +77,6 @@
 	}
 
 	&__checkbox {
-		cursor: pointer;
 	}
 
 	&__checkbox-input {
