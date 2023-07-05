@@ -7,6 +7,7 @@ if(simpleSliderList.length) {
 			modules: [Pagination],
 			slidesPerView: 1,
 			spaceBetween: 0,
+			touchStartPreventDefault: false,
 			pagination: {
 				el: simpleSlider.querySelector('.simple-slider__pagination'),
 				type: 'fraction',
