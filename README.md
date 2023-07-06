@@ -1,5 +1,7 @@
-# Стартовый шаблон для верстки
+# Gemstone
 
-## Документация
+![img.png](img.png)
 
-Документация к данной сборке доступна по ссылке [https://github.com/ninelines-team/ninelines-docs](https://github.com/ninelines-team/ninelines-docs).
+Демо: [GH Pages](https://ovcharov2v.github.io/gemstone/)
+
+Документация к сборке: [https://github.com/ninelines-team/ninelines-docs](https://github.com/ninelines-team/ninelines-docs).
