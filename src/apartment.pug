@@ -11,41 +11,46 @@ block content
 	section.apartment.container
 		.content-box
 			.apartment__title-box
-				h1.apartment__title Apartment 25
+				//h1.apartment__title Apartment 25
 					span.apartment__separator
 					span.apartment__subtitle 5th floor
+				h1.apartment__title.animated-header.animation
+					span.animated-header__box
+						span.animated-header__elem.apartment__title-elem Apartment 25
+							span.apartment__separator
+							span.apartment__subtitle 5th floor
 				p.apartment__text.apartment__text--mobile In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.
 			.apartment__grid
 				// Col
 				.apartment__col
-					p.apartment__text.apartment__text--desktop In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.
+					p.apartment__text.apartment__text--desktop.animation.fade In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.
 					ul.apartment__data
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text Hallway
 							span.apartment__data-text 2 м
 								sup 2
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text Kitchen-living room
 							span.apartment__data-text 20 м
 								sup 2
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text CW
 							span.apartment__data-text 7 м
 								sup 2
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text Bedroom
 							span.apartment__data-text 16 м
 								sup 2
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text Wardrobe
 							span.apartment__data-text 2 м
 								sup 2
-						li.apartment__data-elem
+						li.apartment__data-elem.animation.fade
 							span.apartment__data-text.apartment__data-text--total Total area:
 							span.apartment__data-text.apartment__data-text--total 90 м
 								sup 2
-					+button("Find out the cost", "apartment__link", "#")
-					a.apartment__dowload-link(href="#", download) Download plan
+					+button("Find out the cost", "apartment__link animation fade", "#")
+					a.apartment__dowload-link.animation.fade(href="#", download) Download plan
 						|
 						|
 						span.apartment__dowload-size (PDF / 322 КВ)
@@ -54,13 +59,13 @@ block content
 					.plan-slider.apartment__slider
 						.swiper.plan-slider__elem
 							.swiper-wrapper
-								.swiper-slide.plan-slider__slide
+								.swiper-slide.plan-slider__slide.scaled-block.animation
 									+picture("plan2", "plan-slider__img", "png")
 								.swiper-slide.plan-slider__slide
 									+picture("plan2", "plan-slider__img", "png")
 								.swiper-slide.plan-slider__slide
 									+picture("plan2", "plan-slider__img", "png")
-						.plan-slider__nav
+						.plan-slider__nav.animation.fade
 							button.plan-slider__nav-btn.plan-slider__nav-btn--current(data-slide="1") Drawing
 							button.plan-slider__nav-btn(data-slide="2") 3d rendering
 							button.plan-slider__nav-btn(data-slide="3") On the floor
@@ -70,29 +75,29 @@ block content
 			.simple-slider
 				.swiper
 					.swiper-wrapper
-						.swiper-slide.simple-slider__slide
+						.swiper-slide.simple-slider__slide.scaled-block.animation
 							+picture("img9", "simple-slider__img simple-slider__img--full-width")
 						.swiper-slide.simple-slider__slide
 							+picture("img9", "simple-slider__img simple-slider__img--full-width")
-				.simple-slider__nav-box
+				.simple-slider__nav-box.animation.fade
 					.simple-slider__pagination
 					p.simple-slider__text Facade from Orpak street
-				.simple-slider__progress
+				.simple-slider__progress.animation.fade
 					.simple-slider__progress-value
 	// Section Faq
 	section.section-faq.section-faq--v3.container
 		.content-box
 			.section-faq__grid
 				.section-faq__col
-					h2.section-faq__title-small Additional questions
+					h2.section-faq__title-small.animation.fade Additional questions
 				.section-faq__col
 					.section-faq__text-block
-						p.section-faq__text The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
-						p.section-faq__text An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
+						p.section-faq__text.animation.fade The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
+						p.section-faq__text.animation.fade An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
 					.section-faq__text-block
-						p.section-faq__text The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
-						p.section-faq__text An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
-					ul.faq.section-faq__faq
+						p.section-faq__text.animation.fade The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
+						p.section-faq__text.animation.fade An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
+					ul.faq.section-faq__faq.animation.fade
 						// Faq elem
 						li.faq__elem
 							+animatedLine(class="faq__elem-line")
@@ -125,29 +130,29 @@ block content
 	section.text-and-image.text-and-image--v2.text-and-image--v2-apartment.container
 		.content-box
 			.text-and-image__grid.text-and-image__grid--top
-				+picture("img11", className="text-and-image__img")
+				+picture("img11", className="text-and-image__img scaled-block animation")
 				.text-and-image__content
-					h2.text-and-image__title Comfort zone
-					p.text-and-image__text The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
-					p.text-and-image__text An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
+					h2.text-and-image__title.animation.fade Comfort zone
+					p.text-and-image__text.animation.fade The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.
+					p.text-and-image__text.animation.fade An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.
 		.content-box
 			.text-and-image__grid.text-and-image__grid--bottom
 				.text-and-image__content
-					p.text-and-image__text The House has its own fitness area, on the ground floor, for the services of residents and their guests: a cafe and a grocery store, a pharmacy, dry cleaning, a beauty salon and a medical center.
-					p.text-and-image__text In the northern part of the house, for small residents, there is a well-equipped playground for entertainment.
-				+picture("img12", className="text-and-image__img")
+					p.text-and-image__text.animation.fade The House has its own fitness area, on the ground floor, for the services of residents and their guests: a cafe and a grocery store, a pharmacy, dry cleaning, a beauty salon and a medical center.
+					p.text-and-image__text.animation.fade In the northern part of the house, for small residents, there is a well-equipped playground for entertainment.
+				+picture("img12", className="text-and-image__img scaled-block animation")
 
 	// Section Banner
 	section.banner.banner--video.banner--about-us
 		.banner__video-box
-			video.banner__video(preload='true', loop, muted, poster="images/video-cover1.jpg", playsinline)
+			video.banner__video.scaled-block.animation(preload='true', loop, muted, poster="images/video-cover1.jpg", playsinline)
 				source(src='#', type='video/mp4')
 				//source(src='videos/footer.ogv', type='video/ogv')
 				//source(src='videos/footer.webm', type='video/webm')
-			button.banner__video-button play
+			button.banner__video-button.animation.fade play
 		.container
 			.content-box
-				.banner__text-row
+				.banner__text-row.animation.fade
 					time.banner__time 20.03. 2023
 					p.banner__text-box
 						span.banner__text Gemstone—construction site
@@ -155,9 +160,9 @@ block content
 	// Section Apartment list
 	section.apartment-list.apartment-list--v2.container
 		.content-box
-			h2.apartment-list__title Similar apartments
+			h2.apartment-list__title.animation.fade Similar apartments
 			.apartment-list__grid
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")

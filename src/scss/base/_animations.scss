@@ -40,4 +40,14 @@
 			}
 		}
 	}
+
+	&.fade {
+		opacity: 0;
+		transition: opacity .4s linear;
+		transition-delay: .4s;
+
+		&.animation--complete {
+			opacity: 1;
+		}
+	}
 }

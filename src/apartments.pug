@@ -10,8 +10,10 @@ block content
 	// Section Apartment list
 	section.apartment-list.apartment-list--v1.container
 		.content-box
-			h1.apartment-list__title Apartments  and penthouses
-			.apartment-list__filters.apartment-list__filters--desktop
+			h1.apartment-list__title.animated-header.animation
+				span.animated-header__box
+					span.animated-header__elem Apartments  and penthouses
+			.apartment-list__filters.apartment-list__filters--desktop.animation.fade
 				// Filter row
 				.apartment-list__filter-row
 					p.apartment-list__filter-label М
@@ -33,7 +35,7 @@ block content
 							input.options-group__option(type="checkbox", checked)
 							span.options-group__text 3 bedrooms
 				// Filter row
-				.apartment-list__filter-row
+				.apartment-list__filter-row.animation.fade
 					p.apartment-list__filter-label Floor:
 					.options-group.apartment-list__group.apartment-list__group--floor
 						label.options-group__item.options-group__item--filter
@@ -48,7 +50,7 @@ block content
 						label.options-group__item.options-group__item--filter
 							input.options-group__option(type="checkbox")
 							span.options-group__text 10
-					.dropdown.apartment-list__dropdown
+					.dropdown.apartment-list__dropdown.animation.fade
 						.dropdown__value-box
 							input.dropdown__value(type="text", placeholder="Sort", disabled)
 							+svg("dropdown-arrow")(class="dropdown__arrow")
@@ -58,7 +60,7 @@ block content
 
 			.apartment-list__filters.apartment-list__filters--mobile
 				// Dropdown
-				.dropdown.dropdown--multi-select.apartment-list__dropdown
+				.dropdown.dropdown--multi-select.apartment-list__dropdown.animation.fade
 					.dropdown__value-box
 						input.dropdown__value(type="text", placeholder="Layout", data-prefix="Layout", disabled)
 						+svg("dropdown-arrow")(class="dropdown__arrow")
@@ -80,7 +82,7 @@ block content
 								input.dropdown__checkbox-input(type="checkbox", value="3 bedrooms")
 								span.dropdown__checkbox-text 3 bedrooms
 				// Dropdown
-				.dropdown.dropdown--multi-select.apartment-list__dropdown
+				.dropdown.dropdown--multi-select.apartment-list__dropdown.animation.fade
 					.dropdown__value-box
 						input.dropdown__value(type="text", placeholder="Floor", data-prefix="Floor",  disabled)
 						+svg("dropdown-arrow")(class="dropdown__arrow")
@@ -102,7 +104,7 @@ block content
 								input.dropdown__checkbox-input(type="checkbox", value="10")
 								span.dropdown__checkbox-text 10
 				// Dropdown
-				.dropdown.apartment-list__dropdown
+				.dropdown.apartment-list__dropdown.animation.fade
 					.dropdown__value-box
 						input.dropdown__value(type="text", placeholder="Sort", disabled)
 						+svg("dropdown-arrow")(class="dropdown__arrow")
@@ -110,15 +112,15 @@ block content
 						li.dropdown__option(data-value="By area") By area
 						li.dropdown__option(data-value="By Floor") By Floor
 			.apartment-list__grid
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-				+apartmentData(className="apartment-list__elem")
-			.apartment-list__button-row
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+				+apartmentData("apartment-list__elem animation fade")
+			.apartment-list__button-row.animation.fade
 				+button("Show 8 more of 200", "apartment-list__button")
 
 	+contactsForm()

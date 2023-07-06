@@ -11,7 +11,9 @@ block content
 	// Section 404
 	section.section-404.container
 		.content-box
-			p.section-404__text Page Not Found
-			h1.section-404__title error 404
-			+button("Back to Home", "section-404__back-link", "index.html")
+			p.section-404__text.animation.fade Page Not Found
+			h1.section-404__title.animated-header.animation
+				span.animated-header__box
+					span.animated-header__elem Error 404
+			+button("Back to Home", "section-404__back-link animation fade", "index.html")
 

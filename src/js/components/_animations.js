@@ -5,7 +5,7 @@ document.addEventListener('loader-complete', () => {
 		selector: '.animation',
 		once: true,
 		animateClassName: 'animation--complete',
-		threshold: .4
+		threshold: .1
 	})
 })
 

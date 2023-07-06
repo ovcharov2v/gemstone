@@ -13,13 +13,15 @@ block content
 	section.contacts-us.container
 		.content-box
 			.contacts-us__grid
-				.contacts-us__col-img
+				.contacts-us__col-img.scaled-block.animation
 					+picture("img10", "contacts-us__img")
 				.contacts-us__col-content
 					.contacts-us__top-box
-						a.contacts-us__tel-link(href="tel:+1 213-612-0021") +1 213-612-0021
-						a.contacts-us__mail-link(href="mailto:gemstone@gem.com") Gemstone@gem.com
-						address.contacts-us__address 416 W 8th St, Los Angeles, CA 90014, USA
+						a.contacts-us__tel-link.animation.fade(href="tel:+1 213-612-0021") +1 213-612-0021
+						a.contacts-us__mail-link.animation.fade(href="mailto:gemstone@gem.com") Gemstone@gem.com
+						address.contacts-us__address.animation.fade 416 W 8th St, Los Angeles, CA 90014, USA
 					.contacts-us__bottom-box
-						p.contacts-us__subtitle Сontact form
-						h1.contacts-us__title Get in touch
+						p.contacts-us__subtitle.animation.fade Сontact form
+						h1.contacts-us__title.animated-header.animation
+							span.animated-header__box
+								span.animated-header__elem Get in touch
