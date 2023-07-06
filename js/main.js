@@ -724,6 +724,7 @@ if (simpleSliderList.length) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor */ "./src/js/vendor.js");
+/* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/_loader */ "./src/js/components/_loader.js");
 /* harmony import */ var _components_loader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_loader__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/_animations */ "./src/js/components/_animations.js");
@@ -764,16 +765,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************!*\
   !*** ./src/js/vendor.js ***!
   \**************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+/*! no static exports found */
+/***/ (function(module, exports) {
 
 
-gsap__WEBPACK_IMPORTED_MODULE_0__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_1__["ScrollTrigger"]);
 
 /***/ })
 
