@@ -5,12 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<title>Apartments</title>
-		<link rel="stylesheet" href="./css/main.css?v=1688470555267">
+		<link rel="stylesheet" href="./css/main.css?v=1688603802529">
 	</head>
-	<body>
+	<body data-cursor="empty">
 		<div class="loader"></div>
 		<header class="header">
-			<div class="container header__container"><a class="header__home-link" href="index.html">ge</a><a class="button header__button" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Get an offer</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Get an offer</span>
+			<div class="container header__container"><a class="header__home-link" href="index.html">ge<span class="header__home-link-part">mstone</span></a><a class="button header__button" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Get an offer</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Get an offer</span>
 								<svg class="button__icon">
 									<use xlink:href="#button-arrow"></use>
 								</svg></span></span></span></a>
@@ -85,8 +85,8 @@
 			<!-- Section Apartment list-->
 			<section class="apartment-list apartment-list--v1 container">
 				<div class="content-box">
-					<h1 class="apartment-list__title">Apartments  and penthouses</h1>
-					<div class="apartment-list__filters apartment-list__filters--desktop">
+					<h1 class="apartment-list__title animated-header animation"><span class="animated-header__box"><span class="animated-header__elem">Apartments  and penthouses</span></span></h1>
+					<div class="apartment-list__filters apartment-list__filters--desktop animation fade">
 						<!-- Filter row-->
 						<div class="apartment-list__filter-row">
 							<p class="apartment-list__filter-label">М<sup>2</sup>
@@ -109,7 +109,7 @@
 							</div>
 						</div>
 						<!-- Filter row-->
-						<div class="apartment-list__filter-row">
+						<div class="apartment-list__filter-row animation fade">
 							<p class="apartment-list__filter-label">Floor:</p>
 							<div class="options-group apartment-list__group apartment-list__group--floor">
 								<label class="options-group__item options-group__item--filter">
@@ -125,7 +125,7 @@
 									<input class="options-group__option" type="checkbox"><span class="options-group__text">10</span>
 								</label>
 							</div>
-							<div class="dropdown apartment-list__dropdown">
+							<div class="dropdown apartment-list__dropdown animation fade">
 								<div class="dropdown__value-box">
 									<input class="dropdown__value" type="text" placeholder="Sort" disabled>
 									<svg class="dropdown__arrow">
@@ -141,7 +141,7 @@
 					</div>
 					<div class="apartment-list__filters apartment-list__filters--mobile">
 						<!-- Dropdown-->
-						<div class="dropdown dropdown--multi-select apartment-list__dropdown">
+						<div class="dropdown dropdown--multi-select apartment-list__dropdown animation fade">
 							<div class="dropdown__value-box">
 								<input class="dropdown__value" type="text" placeholder="Layout" data-prefix="Layout" disabled>
 								<svg class="dropdown__arrow">
@@ -172,7 +172,7 @@
 							</ul>
 						</div>
 						<!-- Dropdown-->
-						<div class="dropdown dropdown--multi-select apartment-list__dropdown">
+						<div class="dropdown dropdown--multi-select apartment-list__dropdown animation fade">
 							<div class="dropdown__value-box">
 								<input class="dropdown__value" type="text" placeholder="Floor" data-prefix="Floor" disabled>
 								<svg class="dropdown__arrow">
@@ -203,7 +203,7 @@
 							</ul>
 						</div>
 						<!-- Dropdown-->
-						<div class="dropdown apartment-list__dropdown">
+						<div class="dropdown apartment-list__dropdown animation fade">
 							<div class="dropdown__value-box">
 								<input class="dropdown__value" type="text" placeholder="Sort" disabled>
 								<svg class="dropdown__arrow">
@@ -218,7 +218,7 @@
 					</div>
 					<div class="apartment-list__grid">
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -240,7 +240,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -262,7 +262,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -284,7 +284,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -306,7 +306,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -328,7 +328,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -350,7 +350,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -372,7 +372,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -394,7 +394,7 @@
 							</div>
 						</section>
 					</div>
-					<div class="apartment-list__button-row">
+					<div class="apartment-list__button-row animation fade">
 						<button class="button apartment-list__button"><span class="button__text-box"><span class="button__text button__text--normal">Show 8 more of 200</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Show 8 more of 200</span>
 										<svg class="button__icon">
 											<use xlink:href="#button-arrow"></use>
@@ -406,9 +406,9 @@
 			<section class="contacts-form container">
 				<div class="content-box contacts-form__row">
 					<div class="contacts-form__col contacts-form__col--content">
-						<p class="contacts-form__small-text">Interested in a project?</p>
-						<h2 class="contacts-form__title">Leave contact details for a call back</h2>
-						<form class="contacts-form__form" action="#">
+						<p class="contacts-form__small-text animation fade">Interested in a project?</p>
+						<h2 class="contacts-form__title animation fade">Leave contact details for a call back</h2>
+						<form class="contacts-form__form animation fade" action="#">
 							<input class="input contacts-form__input" type="text" placeholder="Name"/>
 							<input class="input contacts-form__input" type="tel" placeholder="Telephone"/>
 							<label class="checkbox contacts-form__checkbox">
@@ -424,7 +424,7 @@
 					</div>
 					<div class="contacts-form__col contacts-form__col--img">
 						<picture>
-							<source srcset="images/img7@1x.webp, images/img7@2x.webp 2x" type="image/webp"/><img class="contacts-form__img scaled-block" src="images/img7@1x.jpg" srcset="images/img7@2x.jpg 2x" alt=""/>
+							<source srcset="images/img7@1x.webp, images/img7@2x.webp 2x" type="image/webp"/><img class="contacts-form__img scaled-block animation" src="images/img7@1x.jpg" srcset="images/img7@2x.jpg 2x" alt=""/>
 						</picture>
 					</div>
 				</div>
@@ -432,17 +432,17 @@
 		</main>
 		<footer class="footer container">
 			<div class="content-box footer__top-row">
-				<p class="footer__text">Get in touch</p>
-				<h2 class="footer__title animated-header"><span class="animated-header__box"><span class="animated-header__elem">Contact</span></span></h2>
+				<p class="footer__text animation fade">Get in touch</p>
+				<h2 class="footer__title animated-header animation"><span class="animated-header__box"><span class="animated-header__elem">Contact</span></span></h2>
 			</div>
 			<div class="content-box footer__bottom-row">
-				<div class="animated-line footer__line">
+				<div class="animated-line animation footer__line">
 					<div class="animated-line__progress"></div>
 				</div>
 				<div class="footer__wrap"><a class="footer__email" href="mailto:gemstone@gem.com">gemstone@gem.com</a>
 					<ul class="footer__social">
-						<li class="footer__social-elem"><a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-						<li class="footer__social-elem"><a class="footer__social-link" href="https://t.me" target="_blank" rel="noreferrer">telegram</a></li>
+						<li class="footer__social-elem"><a class="footer__social-link animation fade" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+						<li class="footer__social-elem"><a class="footer__social-link animation fade" href="https://t.me" target="_blank" rel="noreferrer">telegram</a></li>
 					</ul>
 				</div>
 				<p class="footer__year">©2023</p>
@@ -461,7 +461,7 @@
 	</symbol>
 </svg>
 
-		<script src="./js/vendor.js?v=1688470555269"></script>
-		<script src="./js/main.js?v=1688470555269"></script>
+		<script src="./js/vendor.js?v=1688603802531"></script>
+		<script src="./js/main.js?v=1688603802531"></script>
 	</body>
 </html>

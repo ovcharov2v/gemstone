@@ -5,12 +5,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<title>Apartment</title>
-		<link rel="stylesheet" href="./css/main.css?v=1688470555045">
+		<link rel="stylesheet" href="./css/main.css?v=1688603802327">
 	</head>
-	<body>
+	<body data-cursor="empty">
 		<div class="loader"></div>
 		<header class="header">
-			<div class="container header__container"><a class="header__home-link" href="index.html">ge</a><a class="button header__button" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Get an offer</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Get an offer</span>
+			<div class="container header__container"><a class="header__home-link" href="index.html">ge<span class="header__home-link-part">mstone</span></a><a class="button header__button" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Get an offer</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Get an offer</span>
 								<svg class="button__icon">
 									<use xlink:href="#button-arrow"></use>
 								</svg></span></span></span></a>
@@ -86,24 +86,28 @@
 			<section class="apartment container">
 				<div class="content-box">
 					<div class="apartment__title-box">
-						<h1 class="apartment__title">Apartment 25<span class="apartment__separator"></span><span class="apartment__subtitle">5th floor</span></h1>
+						<!--h1.apartment__title Apartment 25
+						span.apartment__separator
+						span.apartment__subtitle 5th floor
+						-->
+						<h1 class="apartment__title animated-header animation"><span class="animated-header__box"><span class="animated-header__elem apartment__title-elem">Apartment 25<span class="apartment__separator"></span><span class="apartment__subtitle">5th floor</span></span></span></h1>
 						<p class="apartment__text apartment__text--mobile">In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.</p>
 					</div>
 					<div class="apartment__grid">
 						<!-- Col-->
 						<div class="apartment__col">
-							<p class="apartment__text apartment__text--desktop">In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.</p>
+							<p class="apartment__text apartment__text--desktop animation fade">In our complex there are studio apartments, one-room, two-room apartments, as well as commercial premises and parking spaces.</p>
 							<ul class="apartment__data">
-								<li class="apartment__data-elem"><span class="apartment__data-text">Hallway</span><span class="apartment__data-text">2 м<sup>2</sup></span></li>
-								<li class="apartment__data-elem"><span class="apartment__data-text">Kitchen-living room</span><span class="apartment__data-text">20 м<sup>2</sup></span></li>
-								<li class="apartment__data-elem"><span class="apartment__data-text">CW</span><span class="apartment__data-text">7 м<sup>2</sup></span></li>
-								<li class="apartment__data-elem"><span class="apartment__data-text">Bedroom</span><span class="apartment__data-text">16 м<sup>2</sup></span></li>
-								<li class="apartment__data-elem"><span class="apartment__data-text">Wardrobe</span><span class="apartment__data-text">2 м<sup>2</sup></span></li>
-								<li class="apartment__data-elem"><span class="apartment__data-text apartment__data-text--total">Total area:</span><span class="apartment__data-text apartment__data-text--total">90 м<sup>2</sup></span></li>
-							</ul><a class="button apartment__link" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Find out the cost</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Find out the cost</span>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text">Hallway</span><span class="apartment__data-text">2 м<sup>2</sup></span></li>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text">Kitchen-living room</span><span class="apartment__data-text">20 м<sup>2</sup></span></li>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text">CW</span><span class="apartment__data-text">7 м<sup>2</sup></span></li>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text">Bedroom</span><span class="apartment__data-text">16 м<sup>2</sup></span></li>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text">Wardrobe</span><span class="apartment__data-text">2 м<sup>2</sup></span></li>
+								<li class="apartment__data-elem animation fade"><span class="apartment__data-text apartment__data-text--total">Total area:</span><span class="apartment__data-text apartment__data-text--total">90 м<sup>2</sup></span></li>
+							</ul><a class="button apartment__link animation fade" href="#"><span class="button__text-box"><span class="button__text button__text--normal">Find out the cost</span><span class="button__text button__text--hover"><span class="button__anim-box"><span class="button__anim-text">Find out the cost</span>
 											<svg class="button__icon">
 												<use xlink:href="#button-arrow"></use>
-											</svg></span></span></span></a><a class="apartment__dowload-link" href="#" download>
+											</svg></span></span></span></a><a class="apartment__dowload-link animation fade" href="#" download>
 								Download plan
 								<span class="apartment__dowload-size">(PDF / 322 КВ)</span></a>
 						</div>
@@ -112,7 +116,7 @@
 							<div class="plan-slider apartment__slider">
 								<div class="swiper plan-slider__elem">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide plan-slider__slide">
+										<div class="swiper-slide plan-slider__slide scaled-block animation">
 											<picture>
 												<source srcset="images/plan2@1x.webp, images/plan2@2x.webp 2x" type="image/webp"/><img class="plan-slider__img" src="images/plan2@1x.png" srcset="images/plan2@2x.png 2x" alt=""/>
 											</picture>
@@ -129,7 +133,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="plan-slider__nav">
+								<div class="plan-slider__nav animation fade">
 									<button class="plan-slider__nav-btn plan-slider__nav-btn--current" data-slide="1">Drawing</button>
 									<button class="plan-slider__nav-btn" data-slide="2">3d rendering</button>
 									<button class="plan-slider__nav-btn" data-slide="3">On the floor</button>
@@ -145,7 +149,7 @@
 					<div class="simple-slider">
 						<div class="swiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide simple-slider__slide">
+								<div class="swiper-slide simple-slider__slide scaled-block animation">
 									<picture>
 										<source srcset="images/img9@1x.webp, images/img9@2x.webp 2x" type="image/webp"/><img class="simple-slider__img simple-slider__img--full-width" src="images/img9@1x.jpg" srcset="images/img9@2x.jpg 2x" alt=""/>
 									</picture>
@@ -157,11 +161,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="simple-slider__nav-box">
+						<div class="simple-slider__nav-box animation fade">
 							<div class="simple-slider__pagination"></div>
 							<p class="simple-slider__text">Facade from Orpak street</p>
 						</div>
-						<div class="simple-slider__progress">
+						<div class="simple-slider__progress animation fade">
 							<div class="simple-slider__progress-value"></div>
 						</div>
 					</div>
@@ -172,21 +176,21 @@
 				<div class="content-box">
 					<div class="section-faq__grid">
 						<div class="section-faq__col">
-							<h2 class="section-faq__title-small">Additional questions</h2>
+							<h2 class="section-faq__title-small animation fade">Additional questions</h2>
 						</div>
 						<div class="section-faq__col">
 							<div class="section-faq__text-block">
-								<p class="section-faq__text">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
-								<p class="section-faq__text">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
+								<p class="section-faq__text animation fade">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
+								<p class="section-faq__text animation fade">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
 							</div>
 							<div class="section-faq__text-block">
-								<p class="section-faq__text">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
-								<p class="section-faq__text">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
+								<p class="section-faq__text animation fade">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
+								<p class="section-faq__text animation fade">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
 							</div>
-							<ul class="faq section-faq__faq">
+							<ul class="faq section-faq__faq animation fade">
 								<!-- Faq elem-->
 								<li class="faq__elem">
-									<div class="animated-line faq__elem-line">
+									<div class="animated-line animation faq__elem-line">
 										<div class="animated-line__progress"></div>
 									</div>
 									<div class="faq__title-box">
@@ -200,7 +204,7 @@
 								</li>
 								<!-- Faq elem-->
 								<li class="faq__elem">
-									<div class="animated-line faq__elem-line">
+									<div class="animated-line animation faq__elem-line">
 										<div class="animated-line__progress"></div>
 									</div>
 									<div class="faq__title-box">
@@ -214,7 +218,7 @@
 								</li>
 								<!-- Faq elem-->
 								<li class="faq__elem">
-									<div class="animated-line faq__elem-line">
+									<div class="animated-line animation faq__elem-line">
 										<div class="animated-line__progress"></div>
 									</div>
 									<div class="faq__title-box">
@@ -227,7 +231,7 @@
 									</div>
 								</li>
 							</ul>
-							<div class="animated-line">
+							<div class="animated-line animation">
 								<div class="animated-line__progress"></div>
 							</div>
 						</div>
@@ -239,23 +243,23 @@
 				<div class="content-box">
 					<div class="text-and-image__grid text-and-image__grid--top">
 						<picture>
-							<source srcset="images/img11@1x.webp, images/img11@2x.webp 2x" type="image/webp"/><img class="text-and-image__img" src="images/img11@1x.jpg" srcset="images/img11@2x.jpg 2x" alt=""/>
+							<source srcset="images/img11@1x.webp, images/img11@2x.webp 2x" type="image/webp"/><img class="text-and-image__img scaled-block animation" src="images/img11@1x.jpg" srcset="images/img11@2x.jpg 2x" alt=""/>
 						</picture>
 						<div class="text-and-image__content">
-							<h2 class="text-and-image__title">Comfort zone</h2>
-							<p class="text-and-image__text">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
-							<p class="text-and-image__text">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
+							<h2 class="text-and-image__title animation fade">Comfort zone</h2>
+							<p class="text-and-image__text animation fade">The level of comfort often determines the standard of living. Therefore, we have thought of every detail. A journey into the world of impeccable taste begins with the lobby: the walls are decorated with natural stone, mirrored decorative panels, made according to the author's design.</p>
+							<p class="text-and-image__text animation fade">An open eco-terrace in the eastern part of the house, quiet and protected from city noise, for those who prefer to drink a cup of coffee at dawn in the summer under the first rays of the sun, or those who decide to soak up the sun by noon. Your evening will fly by with cozy conversations in the fresh air, and in winter the terrace will turn into a private skating rink for residents and their guests.</p>
 						</div>
 					</div>
 				</div>
 				<div class="content-box">
 					<div class="text-and-image__grid text-and-image__grid--bottom">
 						<div class="text-and-image__content">
-							<p class="text-and-image__text">The House has its own fitness area, on the ground floor, for the services of residents and their guests: a cafe and a grocery store, a pharmacy, dry cleaning, a beauty salon and a medical center.</p>
-							<p class="text-and-image__text">In the northern part of the house, for small residents, there is a well-equipped playground for entertainment.</p>
+							<p class="text-and-image__text animation fade">The House has its own fitness area, on the ground floor, for the services of residents and their guests: a cafe and a grocery store, a pharmacy, dry cleaning, a beauty salon and a medical center.</p>
+							<p class="text-and-image__text animation fade">In the northern part of the house, for small residents, there is a well-equipped playground for entertainment.</p>
 						</div>
 						<picture>
-							<source srcset="images/img12@1x.webp, images/img12@2x.webp 2x" type="image/webp"/><img class="text-and-image__img" src="images/img12@1x.jpg" srcset="images/img12@2x.jpg 2x" alt=""/>
+							<source srcset="images/img12@1x.webp, images/img12@2x.webp 2x" type="image/webp"/><img class="text-and-image__img scaled-block animation" src="images/img12@1x.jpg" srcset="images/img12@2x.jpg 2x" alt=""/>
 						</picture>
 					</div>
 				</div>
@@ -263,16 +267,16 @@
 			<!-- Section Banner-->
 			<section class="banner banner--video banner--about-us">
 				<div class="banner__video-box">
-					<video class="banner__video" preload="true" loop muted poster="images/video-cover1.jpg" playsinline>
+					<video class="banner__video scaled-block animation" preload="true" loop muted poster="images/video-cover1.jpg" playsinline>
 						<source src="#" type="video/mp4">
 						<!--source(src='videos/footer.ogv', type='video/ogv')-->
 						<!--source(src='videos/footer.webm', type='video/webm')-->
 					</video>
-					<button class="banner__video-button">play</button>
+					<button class="banner__video-button animation fade">play</button>
 				</div>
 				<div class="container">
 					<div class="content-box">
-						<div class="banner__text-row">
+						<div class="banner__text-row animation fade">
 							<time class="banner__time">20.03. 2023</time>
 							<p class="banner__text-box"><span class="banner__text">Gemstone—construction site</span></p>
 						</div>
@@ -282,10 +286,10 @@
 			<!-- Section Apartment list-->
 			<section class="apartment-list apartment-list--v2 container">
 				<div class="content-box">
-					<h2 class="apartment-list__title">Similar apartments</h2>
+					<h2 class="apartment-list__title animation fade">Similar apartments</h2>
 					<div class="apartment-list__grid">
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -307,7 +311,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -329,7 +333,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -351,7 +355,7 @@
 							</div>
 						</section>
 						<!-- Apartment data-->
-						<section class="apartment-data">
+						<section class="apartment-data apartment-list__elem animation fade">
 							<div class="apartment-data__col apartment-data__col--img">
 								<picture>
 									<source srcset="images/plan-small@1x.webp, images/plan-small@2x.webp 2x" type="image/webp"/><img class="apartment-data__img" src="images/plan-small@1x.png" srcset="images/plan-small@2x.png 2x" alt=""/>
@@ -378,17 +382,17 @@
 		</main>
 		<footer class="footer container">
 			<div class="content-box footer__top-row">
-				<p class="footer__text">Get in touch</p>
-				<h2 class="footer__title animated-header"><span class="animated-header__box"><span class="animated-header__elem">Contact</span></span></h2>
+				<p class="footer__text animation fade">Get in touch</p>
+				<h2 class="footer__title animated-header animation"><span class="animated-header__box"><span class="animated-header__elem">Contact</span></span></h2>
 			</div>
 			<div class="content-box footer__bottom-row">
-				<div class="animated-line footer__line">
+				<div class="animated-line animation footer__line">
 					<div class="animated-line__progress"></div>
 				</div>
 				<div class="footer__wrap"><a class="footer__email" href="mailto:gemstone@gem.com">gemstone@gem.com</a>
 					<ul class="footer__social">
-						<li class="footer__social-elem"><a class="footer__social-link" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
-						<li class="footer__social-elem"><a class="footer__social-link" href="https://t.me" target="_blank" rel="noreferrer">telegram</a></li>
+						<li class="footer__social-elem"><a class="footer__social-link animation fade" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+						<li class="footer__social-elem"><a class="footer__social-link animation fade" href="https://t.me" target="_blank" rel="noreferrer">telegram</a></li>
 					</ul>
 				</div>
 				<p class="footer__year">©2023</p>
@@ -407,7 +411,7 @@
 	</symbol>
 </svg>
 
-		<script src="./js/vendor.js?v=1688470555047"></script>
-		<script src="./js/main.js?v=1688470555047"></script>
+		<script src="./js/vendor.js?v=1688603802329"></script>
+		<script src="./js/main.js?v=1688603802329"></script>
 	</body>
 </html>
