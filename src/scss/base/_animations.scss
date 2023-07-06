@@ -43,8 +43,7 @@
 
 	&.fade {
 		opacity: 0;
-		transition: opacity .4s linear;
-		transition-delay: .4s;
+		transition: opacity .7s linear;
 
 		&.animation--complete {
 			opacity: 1;
