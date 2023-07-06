@@ -1143,10 +1143,8 @@ body {
 
 .animation.fade {
   opacity: 0;
-  -webkit-transition: opacity .4s linear;
-  transition: opacity .4s linear;
-  -webkit-transition-delay: .4s;
-          transition-delay: .4s; }
+  -webkit-transition: opacity .7s linear;
+  transition: opacity .7s linear; }
   .animation.fade.animation--complete {
     opacity: 1; }
 
@@ -2607,7 +2605,8 @@ body {
           grid-column: 3/4;
           -ms-grid-row: 1;
           -ms-grid-row-span: 2;
-          grid-row: 1/3; } }
+          grid-row: 1/3;
+          margin-top: 2px; } }
   .estate-description__line {
     position: absolute;
     top: 0;
