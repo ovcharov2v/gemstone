@@ -353,15 +353,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
 var galleryLinkList = document.querySelectorAll('[data-gallery]');
+var sliderList = {};
 if (galleryLinkList.length) {
   galleryLinkList.forEach(function (galleryLink) {
     var gallery = document.querySelector("#".concat(galleryLink.dataset.gallery));
-    //let animation = galleryAnim(gallery)
     galleryLink.addEventListener('click', function (e) {
       e.preventDefault();
       if (gallery) {
         document.body.style.overflow = 'hidden';
         gallery.classList.add('gallery--active');
+        if (galleryLink.dataset.slide) {
+          var gallerySlider = sliderList["".concat(galleryLink.dataset.gallery)];
+          gallerySlider.slideTo("".concat(parseInt(galleryLink.dataset.slide) - 1));
+        }
         setTimeout(function () {
           gallery.classList.add('gallery--animate');
         });
@@ -371,6 +375,7 @@ if (galleryLinkList.length) {
       gallery.classList.remove('gallery--animate');
       setTimeout(function () {
         gallery.classList.remove('gallery--active');
+        document.body.style.overflow = '';
       }, 300);
     });
   });
@@ -381,7 +386,12 @@ if (galleryList.length) {
     var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](gallery.querySelector('.gallery__slider'), {
       slidesPerView: 1,
       spaceBetween: 0,
-      loop: true
+      loop: true,
+      on: {
+        init: function init(swiper) {
+          sliderList["".concat(gallery.id)] = swiper;
+        }
+      }
     });
     var nextButton = gallery.querySelector('.gallery__button--next');
     nextButton.addEventListener('click', function (e) {
@@ -426,11 +436,15 @@ if (sliderElem) {
     });
   };
   var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderElem.querySelector('.swiper'), {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__["Mousewheel"]],
     slidesPerView: 4,
     spaceBetween: 20,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     touchStartPreventDefault: false,
+    mousewheel: {
+      releaseOnEdges: true
+    },
     on: {
       init: function init() {
         markEvenSlides();
@@ -477,18 +491,22 @@ __webpack_require__.r(__webpack_exports__);
 var sliderElem = document.querySelector('.gallery2__slider');
 if (sliderElem) {
   var slider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](sliderElem.querySelector('.swiper'), {
+    modules: [swiper__WEBPACK_IMPORTED_MODULE_0__["Mousewheel"]],
     slidesPerView: 1.1,
     spaceBetween: 30,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     touchStartPreventDefault: false,
+    mousewheel: {
+      releaseOnEdges: true
+    },
     breakpoints: {
       320: {
         slidesPerView: 1.1,
         spaceBetween: 30
       },
       768: {
-        slidesPerView: 1.7,
+        slidesPerView: 2,
         spaceBetween: 60
       }
     }

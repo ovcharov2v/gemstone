@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<title>Gallery 2</title>
-		<link rel="stylesheet" href="./css/main.css?v=1688613070924">
+		<link rel="stylesheet" href="./css/main.css?v=1688668138069">
 	</head>
 	<body data-cursor="empty">
 		<div class="loader"></div>
@@ -91,7 +91,7 @@
 							<div class="swiper-wrapper">
 								<!-- Slide-->
 								<div class="gallery2__slide swiper-slide">
-									<div class="gallery2__slide-box">
+									<div class="gallery2__slide-box" data-cursor="open" data-gallery="gallery1" data-slide="1">
 										<picture>
 											<source srcset="images/gallery5@1x.webp, images/gallery5@2x.webp 2x" type="image/webp"/><img class="gallery2__slide-img" src="images/gallery5@1x.jpg" srcset="images/gallery5@2x.jpg 2x" alt=""/>
 										</picture>
@@ -102,7 +102,7 @@
 								</div>
 								<!-- Slide-->
 								<div class="gallery2__slide gallery2__slide--even swiper-slide">
-									<div class="gallery2__slide-box">
+									<div class="gallery2__slide-box" data-cursor="open" data-gallery="gallery1" data-slide="2">
 										<picture>
 											<source srcset="images/gallery6@1x.webp, images/gallery6@2x.webp 2x" type="image/webp"/><img class="gallery2__slide-img" src="images/gallery6@1x.jpg" srcset="images/gallery6@2x.jpg 2x" alt=""/>
 										</picture>
@@ -113,7 +113,7 @@
 								</div>
 								<!-- Slide-->
 								<div class="gallery2__slide swiper-slide">
-									<div class="gallery2__slide-box">
+									<div class="gallery2__slide-box" data-cursor="open" data-gallery="gallery1" data-slide="3">
 										<picture>
 											<source srcset="images/gallery5@1x.webp, images/gallery5@2x.webp 2x" type="image/webp"/><img class="gallery2__slide-img" src="images/gallery5@1x.jpg" srcset="images/gallery5@2x.jpg 2x" alt=""/>
 										</picture>
@@ -124,7 +124,7 @@
 								</div>
 								<!-- Slide-->
 								<div class="gallery2__slide gallery2__slide--even swiper-slide">
-									<div class="gallery2__slide-box">
+									<div class="gallery2__slide-box" data-cursor="open" data-gallery="gallery1" data-slide="4">
 										<picture>
 											<source srcset="images/gallery6@1x.webp, images/gallery6@2x.webp 2x" type="image/webp"/><img class="gallery2__slide-img" src="images/gallery6@1x.jpg" srcset="images/gallery6@2x.jpg 2x" alt=""/>
 										</picture>
@@ -141,6 +141,55 @@
 					</div>
 				</div>
 			</section>
+			<!-- Gallery example-->
+			<div class="gallery" id="gallery1">
+				<div class="swiper gallery__slider" data-cursor="close">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+						<div class="swiper-slide gallery__slide">
+							<picture>
+								<source srcset="images/gallery-photo1@1x.webp, images/gallery-photo1@2x.webp 2x" type="image/webp"/><img class="gallery__photo" src="images/gallery-photo1@1x.jpg" srcset="images/gallery-photo1@2x.jpg 2x" alt=""/>
+							</picture>
+						</div>
+					</div>
+					<button class="gallery__button gallery__button--prev" aria-label="Previous" data-cursor="prev"></button>
+					<button class="gallery__button gallery__button--next" aria-label="Next" data-cursor="next"></button>
+				</div>
+			</div>
 		</main>
 		<footer class="footer container footer--no-line">
 			<div class="content-box footer__bottom-row">
@@ -166,7 +215,7 @@
 	</symbol>
 </svg>
 
-		<script src="./js/vendor.js?v=1688613070925"></script>
-		<script src="./js/main.js?v=1688613070925"></script>
+		<script src="./js/vendor.js?v=1688668138070"></script>
+		<script src="./js/main.js?v=1688668138070"></script>
 	</body>
 </html>
