@@ -1,4 +1,4 @@
-import Swiper, {Pagination} from 'swiper';
+import Swiper, {Mousewheel} from 'swiper';
 
 const sliderElem = document.querySelector('.gallery1__slider')
 if (sliderElem) {
@@ -16,11 +16,15 @@ if (sliderElem) {
 	}
 
 	const slider = new Swiper(sliderElem.querySelector('.swiper'), {
+		modules: [ Mousewheel ],
 		slidesPerView: 4,
 		spaceBetween: 20,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
 		touchStartPreventDefault: false,
+		mousewheel: {
+			releaseOnEdges: true,
+		},
 		on: {
 			init: function () {
 				markEvenSlides()

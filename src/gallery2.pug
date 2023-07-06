@@ -19,27 +19,50 @@ block content
 					.swiper-wrapper
 						// Slide
 						.gallery2__slide.swiper-slide
-							.gallery2__slide-box
+							.gallery2__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="1")
 								+picture("gallery5", "gallery2__slide-img")
 								.gallery2__slide-bottom
 									p.gallery2__slide-text Building A - photo from 03/22/2023
 						// Slide
 						.gallery2__slide.gallery2__slide--even.swiper-slide
-							.gallery2__slide-box
+							.gallery2__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="2")
 								+picture("gallery6", "gallery2__slide-img")
 								.gallery2__slide-bottom
 									p.gallery2__slide-text Building A - photo from 03/22/2023
 						// Slide
 						.gallery2__slide.swiper-slide
-							.gallery2__slide-box
+							.gallery2__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="3")
 								+picture("gallery5", "gallery2__slide-img")
 								.gallery2__slide-bottom
 									p.gallery2__slide-text Building A - photo from 03/22/2023
 						// Slide
 						.gallery2__slide.gallery2__slide--even.swiper-slide
-							.gallery2__slide-box
+							.gallery2__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="4")
 								+picture("gallery6", "gallery2__slide-img")
 								.gallery2__slide-bottom
 									p.gallery2__slide-text Building A - photo from 03/22/2023
 				.gallery2__progress
 					.gallery2__progress-value
+	// Gallery example
+	.gallery#gallery1
+		.swiper.gallery__slider(data-cursor="close")
+			.swiper-wrapper
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+
+			button.gallery__button.gallery__button--prev(aria-label="Previous", data-cursor="prev")
+			button.gallery__button.gallery__button--next(aria-label="Next", data-cursor="next")

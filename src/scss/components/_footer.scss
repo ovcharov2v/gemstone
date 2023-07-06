@@ -1,6 +1,10 @@
 .footer {
 	padding-top: 100px;
 
+	&--no-line {
+		padding-top: 0;
+	}
+
 	&__top-row {
 	}
 

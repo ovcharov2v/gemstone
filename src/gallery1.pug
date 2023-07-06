@@ -18,7 +18,7 @@ block content
 				.swiper-wrapper
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="1")
 							.gallery1__slide-top
 								p.gallery1__slide-text 01
 								p.gallery1__slide-text Playground- Building A
@@ -27,7 +27,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.gallery1__slide--even.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="2")
 							.gallery1__slide-top
 								p.gallery1__slide-text 02
 								p.gallery1__slide-text Playground- Building A
@@ -36,7 +36,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="3")
 							.gallery1__slide-top
 								p.gallery1__slide-text 03
 								p.gallery1__slide-text Playground- Building A
@@ -45,7 +45,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.gallery1__slide--even.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="4")
 							.gallery1__slide-top
 								p.gallery1__slide-text 04
 								p.gallery1__slide-text Playground- Building A
@@ -54,7 +54,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="5")
 							.gallery1__slide-top
 								p.gallery1__slide-text 05
 								p.gallery1__slide-text Playground- Building A
@@ -63,7 +63,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="6")
 							.gallery1__slide-top
 								p.gallery1__slide-text 06
 								p.gallery1__slide-text Playground- Building A
@@ -72,7 +72,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="7")
 							.gallery1__slide-top
 								p.gallery1__slide-text 07
 								p.gallery1__slide-text Playground- Building A
@@ -81,7 +81,7 @@ block content
 								p.gallery1__slide-text Playground- Building A
 					// Slide
 					.gallery1__slide.swiper-slide
-						.gallery1__slide-box
+						.gallery1__slide-box(data-cursor="open", data-gallery="gallery1", data-slide="8")
 							.gallery1__slide-top
 								p.gallery1__slide-text 08
 								p.gallery1__slide-text Playground- Building A
@@ -90,3 +90,27 @@ block content
 								p.gallery1__slide-text Playground- Building A
 			.gallery1__progress
 				.gallery1__progress-value
+
+	// Gallery example
+	.gallery#gallery1
+		.swiper.gallery__slider(data-cursor="close")
+			.swiper-wrapper
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+				.swiper-slide.gallery__slide
+					+picture("gallery-photo1", "gallery__photo")
+
+			button.gallery__button.gallery__button--prev(aria-label="Previous", data-cursor="prev")
+			button.gallery__button.gallery__button--next(aria-label="Next", data-cursor="next")

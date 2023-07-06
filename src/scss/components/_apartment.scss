@@ -27,7 +27,7 @@
 	}
 
 	&__title-elem {
-		display: flex;
+		display: flex !important;
 		flex-direction: column-reverse;
 
 		@include desktop {
@@ -43,6 +43,7 @@
 		height: 33px;
 		margin-left: 50px;
 		margin-right: -4px;
+		transform: translateY(-20px);
 
 		&::before {
 			position: absolute;

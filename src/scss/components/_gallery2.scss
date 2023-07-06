@@ -1,5 +1,9 @@
 .gallery2 {
-	padding-top: 40px;
+	//padding-top: 40px;
+
+	@include desktop {
+		padding-top: 0;
+	}
 
 	&__slider-title {
 		@include h3-40-light;
@@ -10,7 +14,7 @@
 	}
 
 	&__slider-elem {
-		margin-bottom: 100px;
+		margin-bottom: 40px;
 		overflow: visible;
 
 		@include desktop {

@@ -48,6 +48,7 @@
 
 	&--drag-black {
 		border-color: $color-black;
+		color: $color-black;
 
 		&::before, &::after {
 			position: absolute;
@@ -72,6 +73,7 @@
 
 	&--drag-white {
 		border-color: $color-white;
+		color: $color-white;
 
 		&::before, &::after {
 			position: absolute;
@@ -81,7 +83,7 @@
 			border-style: solid;
 			border-width: 6px 6px 6px 0;
 			opacity: .5;
-			border-color: transparent var(--color-elements) transparent transparent;
+			border-color: transparent $color-white transparent transparent;
 			content: "";
 		}
 
