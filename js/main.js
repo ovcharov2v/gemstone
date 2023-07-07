@@ -364,6 +364,7 @@ if (galleryLinkList.length) {
         gallery.classList.add('gallery--active');
         if (galleryLink.dataset.slide) {
           var gallerySlider = sliderList["".concat(galleryLink.dataset.gallery)];
+          gallerySlider.update();
           gallerySlider.slideTo("".concat(parseInt(galleryLink.dataset.slide) - 1));
         }
         setTimeout(function () {
