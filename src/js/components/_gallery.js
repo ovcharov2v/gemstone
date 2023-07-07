@@ -16,6 +16,7 @@ if (galleryLinkList.length) {
 
 				if(galleryLink.dataset.slide) {
 					const gallerySlider = sliderList[`${galleryLink.dataset.gallery}`]
+					gallerySlider.update()
 					gallerySlider.slideTo(`${parseInt(galleryLink.dataset.slide) - 1}`)
 				}
 
